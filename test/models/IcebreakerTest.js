@@ -11,7 +11,7 @@ describe('Icebreaker', () => {
   })
 
   it("requires('./Question.js')", () => {
-    // a better test
+    // a better test?
     //const icebreaker = new Icebreaker
     //expect(icebreaker.question.to.not.throw()
     expect(Question).to.be.a("function", "Question not required in Icebreaker.js")
