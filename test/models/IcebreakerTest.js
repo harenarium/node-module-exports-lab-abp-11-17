@@ -9,8 +9,11 @@ describe('Icebreaker', () => {
   it("is exported into modules so it can be loaded here", () => {
     expect(Icebreaker).to.be.a("function", "Icebreaker not exported in Icebreaker.js")
   })
-  
+
   it("requires('./Question.js')", () => {
+    // a better test
+    //const icebreaker = new Icebreaker
+    //expect(icebreaker.question.to.not.throw()
     expect(Question).to.be.a("function", "Question not required in Icebreaker.js")
   })
 });
